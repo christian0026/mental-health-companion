@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const connectDB = require('./config/db');
+const exerciseRoutes = require('./routes/exerciseRoutes');
+app.use('/api/exercises', exerciseRoutes);
 
 connectDB();
 const app = express();

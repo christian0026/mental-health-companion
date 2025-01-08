@@ -1,5 +1,6 @@
 const express = require('express');
-const { createMessage, getMessages, updateMessage, deleteMessage } = require('../controllers/messageController');
+const router = express.Router();
+const { createMessage, getMessages, singleMessage, updateMessage, deleteMessage } = require('../controllers/messageController');
 
 //Route to create a new message
 router.post('/', createMessage);
@@ -8,7 +9,7 @@ router.post('/', createMessage);
 router.get('/', getMessages);
 
 //Route to get a single message
-router.get('/:id', getMessage);
+router.get('/:id', singleMessage);
 
 //Route to update a message
 router.put('/:id', updateMessage);

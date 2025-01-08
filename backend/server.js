@@ -1,5 +1,7 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const connectDB = require('./config/db');
 
 //Import routes
@@ -10,7 +12,7 @@ const exerciseRoutes = require('./routes/exerciseRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
 const messageRoutes = require('./routes/messageRoutes');
 const resourceRoutes = require('./routes/resourceRoutes');
-const settingsRoutes = require('./routes/settingRoutes');
+const settingsRoutes = require('./routes/settingsRoutes');
 
 //Load environment variables
 dotenv.config();
@@ -20,6 +22,7 @@ const app = express();
 
 //Middleware
 app.use(express.json());
+app.use(cors());
 
 //Connect to database
 connectDB();

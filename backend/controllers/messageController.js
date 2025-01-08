@@ -26,7 +26,7 @@ const getMessages = async (req, res) => {
 }
 
 //Get a single message
-const getMessage = async (req, res) => {
+const singleMessage = async (req, res) => {
     try {
         const message = await Message.findById(req.params.id);
         if (!message) {
@@ -69,5 +69,6 @@ const deleteMessage = async (req, res) => {
     }
 }
 
-module.exports = { createMessage, getMessages, getMessage, updateMessage, deleteMessage };
+module.exports = { createMessage, getMessages, singleMessage, updateMessage, deleteMessage };
+
 

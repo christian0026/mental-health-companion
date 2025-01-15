@@ -1,27 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 
-const ExerciseCard = () => {
-    const [exercises, setExercises] = useState([]);
+const ExercisesCard = ({ title, description }) => (
+  <Card className="mb-4">
+    <Card.Body>
+      <Card.Title>{title}</Card.Title>
+      <Card.Text>{description}</Card.Text>
+      <Button variant="primary">Learn More</Button>
+    </Card.Body>
+  </Card>
+);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const res = await axios.get('http://localhost:5000/api/exercises');
-            setExercises(res.data);
-        };
-        fetchData();
-    }, []);
-
-    return (
-        <div>
-            {exercises.map((exercise) => (
-                <div key={exercise.id}>
-                    <h3>{exercise.name}</h3>
-                    <p>{exercise.description}</p>
-                </div>
-            ))}
-        </div>
-    );
-};
-
-export default ExerciseCard;
+export default ExercisesCard;

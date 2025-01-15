@@ -15,7 +15,7 @@ This is a project to help users manage mental health by providing tools and reso
 ## Technologies
 - Node.js
 - Express.js
-- MongoDB
+- MySQL
 
 ## Author
 - Christian Fernandez

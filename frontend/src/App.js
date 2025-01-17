@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Exercises from './pages/Exercises';
 import About from './pages/About';
 import Login from './pages/Login';
+import './App.css';
 
 const App = () => (
   <Router>

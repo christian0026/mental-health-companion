@@ -1,5 +1,9 @@
-function Header() {
-    return <h1>AI Mental Health Companion</h1>;
-}
+const Header = () => {
+    return (
+        <div>
+            <h1>Header</h1>
+        </div>
+    );
+};
 
 export default Header;

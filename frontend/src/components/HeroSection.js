@@ -2,9 +2,12 @@ import React from 'react';
 import { Container, Col, Row, Button } from 'react-bootstrap';
 import '../App.css';
 import head_right from '../assets/head_right.png';
+import acm from '../assets/acm.png';
+import apa from '../assets/apa.png';
+import scholar_space from '../assets/scholar_space.png';
 
 const HeroSection = () => (
-  <div className="mt-5">
+  <div className="align-items-center">
     <Container>
       <Row>
         <Col md={6}>
@@ -21,11 +24,28 @@ const HeroSection = () => (
         </Col>
         <Col md={6}>
           <div className='head_right'>
-            <div className='imageContainer d-flex justify-content-ed align-items-center shadow-sm rounded'>
+            <div className='imageContainer d-flex justify-content-ed align-items-center'>
               <img src={head_right} alt="headerr-robot" className='head_rightImg'></img>
             </div>
           </div>
         </Col>
+      </Row>
+
+      <Row>
+        <div className='d-flex'>
+          
+        </div>
+        <Col md='{4}'>
+          <div className='box'>
+            <div className='boxContainer'>
+              <div className=''>
+                <img src={acm} alt='acm' className='img-fluid'></img>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col md='{4}'></Col>
+        <Col md='{4}'></Col>
       </Row>
     </Container>
   </div>

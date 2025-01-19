@@ -3,7 +3,7 @@ import Header from './Header';
 
 const HeaderMain = () => {
     return (
-        <div>
+        <div class='h_main'>
             <Navbar />
             <Header />
         </div>

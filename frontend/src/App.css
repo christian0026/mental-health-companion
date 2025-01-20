@@ -117,13 +117,22 @@
 }
 
 .imageContainer .head_rightImg {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.acm {
-  width: 8rem;
-  height: 100%;
-  object-fit: cover;
+.logos-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  gap: 80px;              
+  margin-top: 20px;
+  background: #E1E1E1;
+}
+
+.logo-img {
+  width: 100px;           
+  height: auto;           
+  transition: transform 0.3s ease;
 }

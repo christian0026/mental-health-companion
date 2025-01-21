@@ -136,3 +136,29 @@
   height: auto;           
   transition: transform 0.3s ease;
 }
+
+.feature-box {
+  margin-bottom: 20px;
+}
+
+.feature-background {
+  background-color: #E1E1E1;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.feature-box h5 {
+  font-size: 16px;
+  color: #31511e;
+  font-weight: bold;
+}

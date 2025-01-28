@@ -124,11 +124,15 @@
 
 .logos-row {
   display: flex;
-  justify-content: center; 
-  align-items: center;  
-  gap: 80px;              
+  justify-content: center;
+  align-items: center;
+  gap: 90px; /* Reduce gap between logos */
   margin-top: 20px;
   background: #E1E1E1;
+  max-width: 1200px; /* Adjust width to your preference */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px; /* Add padding for spacing */
 }
 
 .logo-img {
@@ -161,4 +165,133 @@
   font-size: 16px;
   color: #31511e;
   font-weight: bold;
+}
+
+/* Testimonials */
+.testimonial-card {
+  border: none;
+  border-radius: 10px;
+  background: #E1E1E1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #31511e;
+  border-radius: 50%;
+}
+
+.testimonial-stars svg {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: black;
+}
+
+.testimonial-message {
+  font-style: italic;
+  color: black;
+}
+
+/* CALL TO ACTION */
+.cta-card {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 50px;
+  padding: 30px;
+  max-width: 600px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.cta-title {
+  color: #31511e;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+/* Footer */
+.footer-section {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-top {
+  background: #1D4528;
+  padding: 10px 0;
+}
+
+.social-text {
+  margin: 0;
+  font-weight: bold;
+}
+
+.social-icons {
+  text-align: right;
+}
+
+.social-icons svg {
+  margin: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: #4CAF50;
+}
+
+.footer-middle {
+  background: #111;
+  padding: 30px 0;
+}
+
+.footer-middle h5 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-middle p {
+  margin-bottom: 8px;
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  background: #000;
+  padding: 10px 0;
 }

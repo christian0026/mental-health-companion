@@ -13,11 +13,11 @@ const AppNavbar = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto text-center d-flex justify-content-center">
-          <Nav.Link href='#home' className="nav-links">home</Nav.Link>
-          <Nav.Link href='#about' className="nav-links">about</Nav.Link>
+          <Nav.Link href='/' className="nav-links">home</Nav.Link>
+          <Nav.Link href='../pages/About.js' className="nav-links">about</Nav.Link>
           <Nav.Link href='#testimonials' className="nav-links">testimonials</Nav.Link>
-          <Nav.Link href='#signin' className="nav-links">sign in</Nav.Link>
-          <Nav.Link href='#login' className='nav-links'>
+          <Nav.Link href='/registration' className="nav-links">sign up</Nav.Link>
+          <Nav.Link href='/login' className='nav-links'>
             <Button size='sm' className='bg_login fw-bold text-decoration-none' style={{borderRadius: "20px", background: "black", textTransform: "none"}}>Log in</Button>
           </Nav.Link>
         </Nav>

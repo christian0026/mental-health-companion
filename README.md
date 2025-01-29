@@ -3,7 +3,6 @@
 This is a project to help users manage mental health by providing tools and resources.
 
 ## Features
-- User authentication
 - Mental health tracking
 - Daily reminders
 
@@ -15,7 +14,8 @@ This is a project to help users manage mental health by providing tools and reso
 ## Technologies
 - Node.js
 - Express.js
-- MySQL
+- React
+- Bootstrap 5
 
 ## Author
 - Christian Fernandez

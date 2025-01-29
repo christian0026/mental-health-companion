@@ -1,9 +1,7 @@
-// Updated Registration.js with hover effects and better OTP handling
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { getAuth, sendSignInLinkToEmail } from "firebase/auth";
-import { auth } from "../firebaseConfig"; // Update path correctly
 
 const Registration = () => {
   const auth = getAuth();
@@ -30,7 +28,6 @@ const Registration = () => {
       alert(`Error sending OTP: ${error.message}`);
     }
   };
-  
 
   return (
     <StyledWrapper>

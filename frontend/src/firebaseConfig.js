@@ -1,3 +1,8 @@
+// eslint-disable-next-line
+
+import 'firebase/auth';
+import 'firebase/firestore';
+
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";

@@ -7,14 +7,12 @@ import BenefitsSection from './components/BenefitsSection';
 import Features from './components/Features';
 import MainFeatures from './components/MainFeatures';
 import ConfidentialSecure from './components/ConfidentialSecure';
-import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import ChatbotPage from './pages/ChatbotPage';
-import Loader from './pages/loader';
-import Login from './components/Login';
-import Registration from './components/Registration';
+import LoaderWrapper from './pages/LoaderWrapper';
 import Verify from './components/Verify';
+import Exercises from './pages/Exercises';
 import './App.css';
 
 const App = () => (
@@ -24,7 +22,7 @@ const App = () => (
       <Route
         path="/"
         element={
-          <>
+          <LoaderWrapper>
             <AppNavbar />
             <HeroSection />
             <LogoSection />
@@ -32,26 +30,19 @@ const App = () => (
             <Features />
             <MainFeatures />
             <ConfidentialSecure />
-            <Testimonials />
             <CTA />
             <Footer />
-          </>
+          </LoaderWrapper>
         }
       />
       {/* Chatbot Route */}
       <Route path="/chatbot" element={<ChatbotPage />} />
 
-      {/* Loader Route */}
-      <Route path="/loader" element={ <Loader /> } />
-
-      {/* Login Route */}
-      <Route path="/login" element= { <Login /> } />
-
-      {/* Registration Route */}
-      <Route path="/registration" element={ <Registration />} />
-
       {/* Verify */}
       <Route path="/verify" element={ <Verify /> } />
+
+      {/* Exercises */}
+      <Route path="/exercises" element={ <Exercises /> } />
     </Routes>
   </Router>
 );

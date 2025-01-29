@@ -1,4 +1,3 @@
-// Updated Login.js with hover effects, cancel button, and OTP improvements
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";

@@ -7,7 +7,7 @@ MindBuddy is here to provide personalized support and self care guidance to help
 - Self-Care Guidance
 - Privacy Focused
 
-#Main Features
+##Main Features
 - AI Powered Chatbot
 - Stress Relief Exercises
 - Self-Care Recommendations

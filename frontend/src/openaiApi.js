@@ -7,7 +7,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 export const getChatbotResponse = async (userMessage) => {
   try {
-    // Reinitialize chat every time to prevent session issues
+    // Reinitialize chat to prevent session issues
     const chat = model.startChat({
       history: [
         {

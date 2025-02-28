@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AppNavbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
@@ -16,7 +15,7 @@ import Exercises from './pages/Exercises';
 import './App.css';
 
 const App = () => (
-  <Router>
+  <Router basename="/mental-health-companion"> {/* <-- Add this line */}
     <Routes>
       {/* Main App Route */}
       <Route
@@ -39,10 +38,10 @@ const App = () => (
       <Route path="/chatbot" element={<ChatbotPage />} />
 
       {/* Verify */}
-      <Route path="/verify" element={ <Verify /> } />
+      <Route path="/verify" element={<Verify />} />
 
       {/* Exercises */}
-      <Route path="/exercises" element={ <Exercises /> } />
+      <Route path="/exercises" element={<Exercises />} />
     </Routes>
   </Router>
 );

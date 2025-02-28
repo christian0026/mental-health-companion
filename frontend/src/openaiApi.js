@@ -1,9 +1,9 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const API_KEY = "AIzaSyDr20rG31BFpd14XcnazmYy_6j01lEVCIY";
+const API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
 
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const model = genAI.getGenerativeModel({ model: "gemini-pro-1.0" });
 
 export const getChatbotResponse = async (userMessage) => {
   try {

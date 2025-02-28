@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import AppNavbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import LogoSection from './components/LogoSection';
@@ -15,7 +15,7 @@ import Exercises from './pages/Exercises';
 import './App.css';
 
 const App = () => (
-  <Router basename="/mental-health-companion"> {/* <-- Add this line */}
+  <BrowserRouter basename="/mental-health-companion"> {/* <-- Add this line */}
     <Routes>
       {/* Main App Route */}
       <Route
@@ -43,7 +43,7 @@ const App = () => (
       {/* Exercises */}
       <Route path="/exercises" element={<Exercises />} />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
 
 export default App;
